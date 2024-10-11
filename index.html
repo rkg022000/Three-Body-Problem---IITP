@@ -1,57 +1,487 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
- <style>
-   .topnav-right {
-    float:right;
-   }
- </style>
+  <title>Three Body Problem</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #9966ff">
-  <a class="navbar-brand" href="#" style="color: white"><b>Three Body Problem</b></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse topnav-right" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html"><b>Home </b><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="instructions.html"><b>Instructions</b></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="theory.html"><b>Conceptual Theory</b></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html"><b>About Us</b></a>
-      </li>
-    </ul>
-  </div>
-  </nav>
+  <!-- Favicons -->
+  <link href="assets/img/icon.png" rel="icon">
 
-  </head>
-  <body>
-   <!-- this displays body -->
-  <div>  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <iframe src="https://trinket.io/embed/glowscript/7221fcedd5?outputOnly=true" width="100%" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-    <p>Thank You</p>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  
-  </div>
-  </body>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.0.1
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#animation" class="nav-link scrollto"><i class="bx bxl-redux"></i> <span>Animation</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#theory" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Theory</span></a></li>
+        <li><a href="#help" class="nav-link scrollto"><i class="bx bx-question-mark"></i> <span>Help?</span></a></li>
+        <li><a href="#team" class="nav-link scrollto"><i class="bx bxs-group"></i> <span>Team</span></a></li>
+        <li><a href="#ref" class="nav-link scrollto"><i class="bx bx-library"></i> <span>Reference</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Home Section ======= -->
+  <section id="home" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Welcome!</h1>
+      <p> &#9763; <span class="typed" data-typed-items="The Three Body Problem"></span></p>
+    </div>
+  </section><!-- End Home -->
+
+  <main id="main">
+
+    <!-- ======= Animation Section ======= -->
+    <section id="animation" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Animation</h2>
+        </div>
+
+        <div>
+          <iframe src="https://trinket.io/embed/glowscript/d33ad218a9?outputOnly=true" width="100%" height="520" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section><!-- End Animation Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <br>
+          In physics and classical mechanics, the three-body problem is the problem of taking the initial positions and velocities (or momenta) of three point masses and solving for their subsequent motion according to Newton's laws of motion and Newton's law of universal gravitation.The three-body problem is a special case of the n-body problem. Unlike two-body problems, no general closed-form solution exists,as the resulting dynamical system is chaotic for most initial conditions, and numerical methods are generally required. Historically, the first specific three-body problem to receive extended study was the one involving the Moon, the Earth, and the Sun.In an extended modern sense, a three-body problem is any problem in classical mechanics or quantum mechanics that models the motion of three particles.
+          <br><hr>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="resume-item pb-0">
+              <h4>Three Body Trajectory in Plane</h4>
+              <br>
+              <div class="column">
+                <img id="img1" src=".\assets\img\Three-body_Problem_Animation_with_COM.gif" alt="3-body trajectory" width="400" height="350">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="resume-item">
+              <h4>Three Body Trajectory in Space</h4>
+              <br>
+              <div class="column">
+                <img id="img1" src=".\assets\img\image-asset.gif" alt="3-body trajectory" width="400" height="350">
+              </div>  
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Theory Section ======= -->
+    <section id="theory" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Theory</h2>
+          <p>Click on the below topics to browse the respective tabs.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-n_body">n-Body Problem</li>
+              <li data-filter=".filter-mat_for">Mathematical Formulation</li>
+              <li data-filter=".filter-gen_sol">General Solutions</li>
+              <li data-filter=".filter-spe_sol">Specific Solutions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="column portfolio-item filter-n_body">
+            <div>
+              <h3 style="color: #0563bb;">&#8608; n-Body Problem</h3>
+              <br>
+              The n-Body Problem describes how n objects will move under one of the physical forces, such as gravity. These problems have a global analytical solution in the form of a convergent power series. However, these series converge so slowly that they are useless for practical purposes; therefore, it is currently necessary to approximate solutions by numerical analysis in the form of numerical integration or classical trigonometric series approximations. Atomic systems, e.g. atoms, ions, and molecules, can be treated in terms of the quantum n-body problem. Among classical physical systems, the n-body problem usually refers to a galaxy or to a cluster of galaxies and planetary systems, such as stars, planets, and their satellites. Some applications are conveniently treated by perturbation theory, in which the system is considered as a two-body problem plus additional forces causing deviations from a hypothetical unperturbed two-body trajectory.
+            </div>
+          </div>
+
+          <div class="column portfolio-item filter-mat_for">
+            <div>
+              <h3 style="color: #0563bb;">&#8608; Mathematical Formulation</h3>
+              <br>
+                For the Three Bodies, we have Masses as Mi i.e M1,M2,M3 , position vectors as ri=(xi,yi,zi) and initial velocity vectors as vi=(vx,vy,vz).
+                <br>We use <b>Newton’s Law of Gravitation</b> for the calculation of the mutual gravitational forces. Let the bodies be named as sun1, sun2 and sun3.<br><br>
+                The distance between sun 1 and sun 2 can be expressed as<br>
+                r12 = sun1.pos – sun2.pos<br>
+                <b>r12 = r1-r2</b><br><br>
+                Force on sun1 due to sun2 can be expressed as<br>
+                <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\fn_jvn&space;F12&space;=&space;-F21&space;=\frac{-(G*M1*M2)\overrightarrow{r12}}{\left&space;|&space;r12&space;\right&space;|^{3}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\fn_jvn&space;F12&space;=&space;-F21&space;=\frac{-(G*M1*M2)\overrightarrow{r12}}{\left&space;|&space;r12&space;\right&space;|^{3}}" title="F12 = -F21 =\frac{-(G*M1*M2)\overrightarrow{r12}}{\left | r12 \right |^{3}}" /></a>
+                <br>where M1 and M2 are the respective masses of sun1 and sun2 and G is the gravitation constant. <br><br>
+                This is how all the individual forces are calculated, and the directions are given. The cumulative force on one body due to the other three bodies is the vector sum of the two individual gravitational forces (for example, between sun1, sun2 and sun1, sun3).
+                <br><b>F1 = F12 + F13 </b><br><br>
+                By <b>Newton's laws of Motion</b>, we have<br>
+                Acceleration of sun1: a1 = F1/M1<br>
+                <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\fn_jvn&space;\ddot{r1}=&space;-\frac{G*M2*(\overrightarrow{r1}-\overrightarrow{r2})}{\left&space;|&space;r1-r2\right&space;|^{3}}-\frac{G*M3*(\overrightarrow{r1}-\overrightarrow{r3})}{\left&space;|&space;r1-r3\right&space;|^{3}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\fn_jvn&space;\ddot{r1}=&space;-\frac{G*M2*(\overrightarrow{r1}-\overrightarrow{r2})}{\left&space;|&space;r1-r2\right&space;|^{3}}-\frac{G*M3*(\overrightarrow{r1}-\overrightarrow{r3})}{\left&space;|&space;r1-r3\right&space;|^{3}}" title="\ddot{r1}= -\frac{G*M2*(\overrightarrow{r1}-\overrightarrow{r2})}{\left | r1-r2\right |^{3}}-\frac{G*M3*(\overrightarrow{r1}-\overrightarrow{r3})}{\left | r1-r3\right |^{3}}" /></a>
+                <br><br>Velocity change in time dt: <b>V1new = V1old + a1*dt </b><br>
+                Position change in time dt: <b>sun1.posnew = sun1.posold + V1new*dt</b>
+                <br><br>Therefore, Three Body Problem is described by set of <b>9 second-order</b> differential equations for accelerations or we can say a set of  <b>18 first-order</b> differential equations, one for each component of the positions ri and momenta pi.
+                <br><br>When there is a collision occurring, elastic collisions are considered. <br>
+                Thus, By Conservation of Momentum
+                <br><b>M1*V1old + M2*V2old = M1*V1new + M2*V2new</b>
+                <br><br>and By Conservation of Energy <br>
+                <b>0.5*M1*V1old*V1old + 0.5*M2*V2old*V2old = 0.5*M1*V1new*V1new + 0.5*M2*V2new*V2new</b>
+                <br><br>These equations, on solving, give us the values of final velocities of the two particles colliding, after elastic collision.
+            </div>
+          </div>
+
+          <div class="column portfolio-item filter-gen_sol">
+            <div>
+              <h3 style="color: #0563bb;">&#8608; General Solutions</h3>
+              <br>
+                There is <b>no general analytical solution</b> to the three-body problem given by simple algebraic expressions and integrals. Moreover, the motion of three bodies is generally <b>non-repeating</b>, except in special cases.
+                <br>In 1912, the Finnish mathematician <b>Karl Fritiof Sundman</b> proved that there exists a series solution in <b>powers of t^(1/3)</b> for the 3-body problem.This series converges for all real t, except for initial conditions corresponding to <b>zero angular momentum</b>.
+                <br><br>The <b>radius of convergence</b> for this series is determined by the distance to the <b>nearest singularity</b>. Therefore, it is necessary to study the possible singularities of the 3-body problems and the only singularities in the 3-body problem are <b>binary collisions and triple collisions</b>.
+                <br><br>Collisions, whether binary or triple, are somewhat improbable, since they correspond to a set of initial conditions of measure zero. However, there is no criterion known to be put on the initial state in order to avoid collisions for the corresponding solution. So Sundman's strategy consisted of the following steps:
+                
+                <br><br> 1. Using an appropriate change of variables to continue analyzing the solution beyond the binary collision, in a process known as <b>regularization</b>.
+                <br> 2. Proving that triple collisions only occur when the angular momentum L vanishes. By restricting the initial data to L ≠ 0, he removed all real singularities from the transformed equations for the 3-body problem.
+                <br> 3. Showing that if L ≠ 0, then not only can there be no triple collision, but the system is strictly bounded away from a triple collision. This implies, by using Cauchy's existence theorem for differential equations, that there are no complex singularities in a strip (depending on the value of L) in the complex plane centered around the real axis.
+                <br> 4. Find a conformal transformation that maps this strip into the unit disc. For example, if s = t^(1/3) (the new variable after the regularization) and if |ln s| ≤ β,then this map is given by
+                <br><a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\fn_cs&space;\large&space;{\displaystyle&space;\sigma&space;={\frac&space;{e^{\frac&space;{\pi&space;s}{2\beta&space;}}-1}{e^{\frac&space;{\pi&space;s}{2\beta&space;}}&plus;1}}.}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\fn_cs&space;\large&space;{\displaystyle&space;\sigma&space;={\frac&space;{e^{\frac&space;{\pi&space;s}{2\beta&space;}}-1}{e^{\frac&space;{\pi&space;s}{2\beta&space;}}&plus;1}}.}" title="\large {\displaystyle \sigma ={\frac {e^{\frac {\pi s}{2\beta }}-1}{e^{\frac {\pi s}{2\beta }}+1}}.}" /></a>
+                <br> This finishes the proof of Sundman's theorem.
+                
+                <br><br>Unfortunately, the corresponding series converges very slowly. That is, obtaining a value of meaningful precision requires so many terms that this solution is of little practical use.
+            </div>
+          </div>
+
+          <div class="column portfolio-item filter-spe_sol">
+            <div>
+              <h3 style="color: #0563bb;">&#8608; Specific Solutions</h3>
+              <br>
+                Specific solutions could be sorted into just three families: the <b>Lagrange-Euler family</b> discovered by Joseph-Louis Lagrange and Leonhard Euler, the <b>Broucke-Hénon family</b> discovered by  Roger Broucke and Michel Hénon, and <b>the figure-eight family</b> discovered by Cristopher Moore.
+                <br><br>The figure-eight family is so called because it describes three objects chasing one another in a figure eight shape. The Lagrange-Euler solutions are simpler, with the equally spaced bodies going around in a circle like horses on a merry-go-round. The Broucke-Hénon solutions are the most complex: Two objects dash back and forth on the inside, while the third object orbits around the outside.
+                <br><br>
+                <h4 style="color: #63038f;">&#8608; 1. Euler Solution</h4>
+                In 1767, Leonhard Euler found three families of periodic solutions in which the three masses are <b>collinear</b> at each instant. For more details, see <a href="https://en.wikipedia.org/wiki/Euler%27s_three-body_problem">Euler's three-body problem</a>.</p>
+                <div style="text-align:center;">
+                <img src=".\assets\img\eu1.jpg" alt="euler solution" width="500" height="250" >
+                </div>
+                <br>
+                <h4 style="color: #63038f;">&#8608; 2. Langrange Solution</h4>
+                In 1772, Lagrange found a family of solutions in which the three masses form an <b>equilateral triangle</b> at each instant. Together with Euler's collinear solutions, these solutions form the central configurations for the three-body problem. These solutions are valid for any mass ratios, and the masses move on <b>Keplerian ellipses</b>. These four families are the only known solutions for which there are explicit analytic formulae. In the special case of the circular restricted three-body problem, these solutions, viewed in a frame rotating with the primaries, become points which are referred to as L1, L2, L3, L4, and L5, and called <a href="https://en.wikipedia.org/wiki/Lagrangian_point">Lagrangian points</a>, with L4 and L5 being symmetric instances of Lagrange's solution.
+                <br><br>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <img id="img1" src=".\assets\img\l1.png" alt="Langrange Solution" width="500" height="400">
+                  </div>
+                  <div class="col-lg-6">
+                    <img id="img1" src=".\assets\img\lang2.gif" alt="Langrange Solution" width="500" height="400">
+                  </div>
+                </div>
+                <br><br>
+                <h4 style="color: #63038f;">&#8608; 3. Broucke-Hénon Solution</h4>
+                In the 1970s, Michel Hénon and Roger A. Broucke each found a set of solutions that form part of the same family of solutions: the Broucke–Henon–Hadjidemetriou family. In this family the three objects all have the <b>same mass</b> and can exhibit both retrograde and direct forms. In some of Broucke's solutions two of the bodies follow the <b>same path</b>.
+                <div style="text-align:center;">
+                  <img id="img1" src=".\assets\img\bruoke1.gif" alt=" Broucke-Hénon solution" width="500" height="250" >
+                </div><br>
+                <h4 style="color: #63038f;">&#8608; 4. Figure Eight Solution</h4>
+                In 1993, a <b>zero angular momentum</b> solution with three <b>equal masses</b> moving around a figure-eight shape was discovered numerically by physicist Cris Moore at the Santa Fe Institute.The solution has been shown numerically to be <b>stable for small perturbations of the mass and orbital parameters</b>, which raises the intriguing possibility that such orbits could be observed in the physical universe. However, it has been argued that this occurrence is unlikely since the domain of stability is small. 
+                <br><br>
+                <div style="text-align:center;">
+                  <img src=".\assets\img\Eight1.gif" alt=" Figure 8 solution" width="520" height="250" >
+                </div>
+                <br><br>
+                <h4 style="color: #63038f;">&#8608; 5. 13 New Family of Solutions</h4>
+                In 2013, physicists Milovan Šuvakov and Veljko Dmitrašinović at the Institute of Physics in Belgrade discovered <a href="https://www.sciencemag.org/news/2013/03/physicists-discover-whopping-13-new-solutions-three-body-problem">13 new families of solutions</a> for the <b>equal-mass zero-angular-momentum</b> three-body problem.Faced with so many new solutions, the Belgrade physicists invented a new classification system. They used an abstract space called a <b>"shape-sphere"</b> which describes the shape of the orbits in terms of the <b>relative distances between the objects</b>. Three spots around the sphere's equator mark where two of the particles would collide, and a line drawn over the ball, which must avoid those spots, maps how near the objects get to each other.
+                <br><br>
+                <div style="text-align:center;">
+                  <img id="img1" src=".\assets\img\sn-threebody.jpg" alt=" 13 new families solution" width="520" height="410" >
+                </div>
+                <br><br>
+                <h4 style="color: #63038f;">&#8608; Other Problems involving Three Bodies</h4>
+                The term <b>'three-body problem'</b> is sometimes used in the more general sense to refer to any physical problem involving the <b>interaction of three bodies</b>.
+
+                <br><br>A quantum mechanical analogue of the gravitational three-body problem in classical mechanics is the helium atom, in which a <b>helium nucleus</b> and two electrons interact according to <b>the inverse-square Coulomb interaction</b>. Like the gravitational three-body problem, the helium atom cannot be solved exactly.
+
+                <br><br>In both classical and quantum mechanics, however, there exist nontrivial interaction laws besides the inverse-square force which do lead to exact analytic three-body solutions. One such model consists of a combination of <b>harmonic attraction and a repulsive inverse-cube force</b>. This model is considered nontrivial since it is associated with a set of <b>nonlinear differential equations containing singularities</b> (compared with, e.g., harmonic interactions alone, which lead to an easily solved system of linear differential equations). In these two respects it is analogous to (insoluble) models having Coulomb interactions, and as a result has been suggested as a tool for intuitively understanding physical systems like the helium atom.
+
+                <br><br>The gravitational three-body problem has also been studied using <b>general relativity</b>. Physically, a relativistic treatment becomes necessary in systems with very strong gravitational fields, such as near <b>the event horizon of a black hole</b>. However, the relativistic problem is considerably more difficult than in Newtonian mechanics, and sophisticated numerical techniques are required. Even the full two-body problem (i.e. for arbitrary ratio of masses) does not have a rigorous analytic solution in general relativity.
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Theory Section -->
+
+    <!-- ======= Help Section ======= -->
+    <section id="help" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Instructions</h2>
+          <p>We are here to help you get familiar with the interface! Click on the Steps to expand with picture examples.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i style="font-family: cursive;">1</i>
+              </div>
+              <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><h4>Step 1</h4></a>
+              <p style="text-align: center;">In the Animation Page, click on "Run" button located just beside the Trinket Icon.</p>
+              <p style="text-align: center;">The main Animation window will appear now.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i style="font-family: cursive;">2</i>
+              </div>
+              <a href="PD1.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><h4>Step 2</h4></a>
+              <p style="text-align: center;">The "Play/Pause" button will start or stop the animation on clicking from the present position.</p>
+              <p style="text-align: center;">The "Restart" button will reset the display and start the animation all over again.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i style="font-family: cursive;">3</i>
+              </div>
+              <a href="PD2.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><h4>Step 3</h4></a>
+              <p style="text-align: center;"> The "Animation Speed" slider is used to control the animation speed.</p>
+              <p style="text-align: center;"> Its value ranges from 0.1x to 10x of the original speed and is set at 1x by default.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                </svg>
+                <i style="font-family: cursive;">4</i>
+              </div>
+              <a href="PD3.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><h4>Step 4</h4></a>
+              <p style="text-align: center;">There is a drop down for initial conditionsto select from. From the top there are some pre-defined conditions, click on one of these to load and play it.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                </svg>
+                <i style="font-family: cursive;">5</i>
+              </div>
+              <a href="PD4.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><h4>Step 5</h4></a>
+              <p style="text-align: center;">The last option in the Initial conditions drop down is "User Defined".</p>
+              <p style="text-align: center;">By Clicking on this, the user enter their own inputs in the pop-ups that will display.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-teal">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i style="font-family: cursive;">6</i>
+              </div>
+              <a href="PD5.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><h4>Step 6</h4></a>
+              <p style="text-align: center;">On the animation screen, user can rotate the plane by using the Right mouse click and Zoom in/out using the scroll wheel or the Left mouse click.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Help Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>The Team</h2>
+        </div>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <img src="assets/img/team/ss-sir.jpg" class="testimonial-img" alt="Somenath Sarangi">
+                    <h3>Dr. Somnath Sarangi</h3>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="assets/img/team/am-sir.jpg" class="testimonial-img" alt="Anirban Mahato">
+                    <h3>Dr. Anirban Mahato</h3>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Mentors
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img src="assets/img/team/1801me13.jpg" class="testimonial-img" alt="Anushka Vats">
+                    <h3>Anushka Vats</h3>
+                    <h4>1801ME13</h4>
+                  </div>
+                  <div class="col-lg-3">
+                    <img src="assets/img/team/1801me14.jpg" class="testimonial-img" alt="Anway Bhattacharyya">
+                    <h3>Anway Bhattacharyya</h3>
+                    <h4>1801ME14</h4>
+                  </div>
+                  <div class="col-lg-3">
+                    <img src="assets/img/team/1801me44.jpg" class="testimonial-img" alt="Pranshu Kapri">
+                    <h3>Pranshu Kapri</h3>
+                    <h4>1801ME44</h4>
+                  </div>
+                  <div class="col-lg-3">
+                    <img src="assets/img/team/1801me50.jpg" class="testimonial-img" alt="Rishi Kumar">
+                    <h3>Rishi Kumar</h3>
+                    <h4>1801ME50</h4>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Team Members
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= References Section ======= -->
+    <section id="ref" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>References</h2>
+        </div>
+	<div class="contents">
+          	<p>1. <a href="https://en.wikipedia.org/wiki/Three-body_problem">Three Body Problem - Wikipedia</a></p>
+		<p>2. <a href="https://en.wikipedia.org/wiki/Euler%27s_three-body_problem">Euler's three-body problem - Wikipedia</a></p>
+		<p>3. <a href="https://www.sciencemag.org/news/2013/03/physicists-discover-whopping-13-new-solutions-three-body-problem">Physicists Discover a Whopping 13 New Solutions to Three-Body Problem - Article by Jon Cartwright, 2013</a></p>
+		<p>4. <a href="http://www.phys.lsu.edu/faculty/gonzalez/Teaching/Phys7221/ThreeBodyProblem.pdf">The Three-Body Problem Special Lecture: Wednesday October 11, 2006, Juhan Frank, LSU</a></p>
+		<p>5. <a href="https://www.ias.ac.in/article/fulltext/reso/024/01/0087-0114">Krishnaswami, G.S. and Senapati, H., 2019, "An Introduction to the Classical Three-Body Problem From Periodic Solutions to Instabilities and Chaos"</a></p>
+		<p>6. <a href="http://emis.matem.unam.mx/journals/Annals/152_3/chencine.pdf">Chenciner, A. and Montgomery, R., 2000, "A remarkable periodic solution of the three-body problem in the case of equal masses"</a></p>
+		
+        </div>
+
+      </div>
+    </section><!-- End References Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Thank You!</h3>
+      <p>We hope you liked it. Please Visit Again.</p>
+
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        Template taken from <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <!-- DONT Change Anything After here...-->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
